@@ -761,6 +761,19 @@
             </div>
         </div>
     </footer><!--/#footer-->
+    <script>
+  $('.business-stats').each(function () {
+      var $this = $(this);
+      $({ Counter: 0 }).animate({ Counter: $this.data('digit') }, {
+          duration: $this.data('duration'),
+          easing: 'swing',
+          step: function () {
+              $this.text(Math.ceil(this.Counter));
+          }
+      });
+  });
+</script>
+
 
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script> 
