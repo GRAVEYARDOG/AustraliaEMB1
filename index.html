@@ -106,7 +106,7 @@
                         <div class="media-body">
                             <h4 class="media-heading">Eligibility Requirements-የብቃት መስፈርቶች</h4>
                             <p>The applicant must meet the eligibility criteria.<br/>
-አመልካቹ የተወሰኑትን መምረጫ መስፈርቶች መሟሟት አለበት።</p>
+ አመልካቹ የተወሰኑትን መምረጫ መስፈርቶች መሟሟት አለበት።</p>
                         </div>
                     </div>
 </div>
@@ -390,7 +390,7 @@
     <div class="container">
         <div class="section-header">
             <h2 class="section-title text-center wow fadeInDown">Clients Additional Information-የደንበኞች ተጨማሪ መረጃ</h2>
-            <p class="text-center wow fadeInDown"> our Client's Additional information In Both Image And Detailed Description<br>የደንበኛዎች ተጨማሪ መረጃ በምስልና በዝርዝር መግለጫ</p>
+            <p class="text-center wow fadeInDown"> our Client Additional information In Both Image And Detailed Description<br>የደንበኛዎች ተጨማሪ መረጃ በምስልና በዝርዝር መግለጫ</p>
         </div>
 
         <div class="row text-center">
@@ -560,45 +560,47 @@
 </section><!--/#our-team-->
 
 
-    <section id="business-stats">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title text-center wow fadeInDown">Overall Client Stats This Year-የደንበኞች አጠቃላይ ስታቲስቲካስ በዚህ አመት</h2>
-                <p class="text-center wow fadeInDown">This section presents a summary of all client-related statistics recorded throughout the year. <br> It includes key data such as the total number of clients, completed projects, ongoing engagements, and overall performance trends—helping you assess growth, performance, and impact at a glance. </p>
-            </div>
+ <section id="business-stats">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title text-center wow fadeInDown">
+                Overall Client Stats This Year - የደንበኞች አጠቃላይ ስታቲስቲካስ በዚህ አመት
+            </h2>
+            <p class="text-center wow fadeInDown">
+                This section presents a summary of all client-related statistics recorded throughout the year. <br>
+                It includes key data such as the total number of clients, completed projects, ongoing engagements, and overall performance trends—helping you assess growth, performance, and impact at a glance.
+            </p>
+        </div>
 
-            <div class="row text-center">
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="wow fadeInUp" data-wow-duration="400ms" data-wow-delay="0ms">
-                        <div class="business-stats" data-digit="6850" data-duration="1000"></div>
-                        <strong>Clients</strong>
-                        
-                    </div>
+        <div class="row text-center">
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="wow fadeInUp" data-wow-duration="400ms" data-wow-delay="0ms">
+                    <div class="business-stats" data-digit="6850" data-duration="1000">0</div>
+                    <strong>Clients</strong>
                 </div>
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="wow fadeInUp" data-wow-duration="400ms" data-wow-delay="100ms">
-                        <div class="business-stats" data-digit="1465" data-duration="1000"></div>
-                        <strong>Completed</strong>
-                        
-                    </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="wow fadeInUp" data-wow-duration="400ms" data-wow-delay="100ms">
+                    <div class="business-stats" data-digit="1465" data-duration="1000">0</div>
+                    <strong>Completed</strong>
                 </div>
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="wow fadeInUp" data-wow-duration="400ms" data-wow-delay="200ms">
-                        <div class="business-stats" data-digit="4325" data-duration="1000"></div>
-                        <strong>In Progress</strong>
-                     
-                    </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="wow fadeInUp" data-wow-duration="400ms" data-wow-delay="200ms">
+                    <div class="business-stats" data-digit="4325" data-duration="1000">0</div>
+                    <strong>In Progress</strong>
                 </div>
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="wow fadeInUp" data-wow-duration="400ms" data-wow-delay="300ms">
-                        <div class="business-stats" data-digit="2883" data-duration="1000"></div>
-                        <strong>Revenue</strong>
-                       
-                    </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="wow fadeInUp" data-wow-duration="400ms" data-wow-delay="300ms">
+                    <div class="business-stats" data-digit="2883" data-duration="1000">0</div>
+                    <strong>Revenue (ETB)</strong>
                 </div>
             </div>
         </div>
-    </section><!--/#business-stats-->
+    </div>
+</section>
+
 
     <section id="pricing">
         <div class="container">
@@ -761,18 +763,7 @@
             </div>
         </div>
     </footer><!--/#footer-->
-    <script>
-  $('.business-stats').each(function () {
-      var $this = $(this);
-      $({ Counter: 0 }).animate({ Counter: $this.data('digit') }, {
-          duration: $this.data('duration'),
-          easing: 'swing',
-          step: function () {
-              $this.text(Math.ceil(this.Counter));
-          }
-      });
-  });
-</script>
+
 
 
     <script src="js/jquery.js"></script>
@@ -784,5 +775,50 @@
     <script src="js/jquery.inview.min.js"></script>
     <script src="js/wow.min.js"></script>
     <script src="js/custom-scripts.js"></script>
+    <script>
+document.addEventListener("DOMContentLoaded", function () {
+    const counters = document.querySelectorAll(".business-stats");
+
+    function animateCounter(counter) {
+        const target = +counter.getAttribute("data-digit");
+        const duration = +counter.getAttribute("data-duration");
+        const stepTime = Math.max(Math.floor(duration / target), 10);
+        let count = 0;
+
+        const interval = setInterval(() => {
+            count += 1;
+            counter.textContent = count.toLocaleString();
+            if (count >= target) {
+                clearInterval(interval);
+                counter.textContent = target.toLocaleString(); // ensures exact number at the end
+            }
+        }, stepTime);
+    }
+
+    const options = {
+        root: null,
+        rootMargin: "0px",
+        threshold: 0.4
+    };
+
+    const observer = new IntersectionObserver(function (entries, observer) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const counter = entry.target;
+                if (!counter.classList.contains("counted")) {
+                    animateCounter(counter);
+                    counter.classList.add("counted");
+                }
+            }
+        });
+    }, options);
+
+    counters.forEach(counter => {
+        counter.textContent = "0";
+        observer.observe(counter);
+    });
+});
+</script>
+
 </body>
 </html>
