@@ -839,4 +839,59 @@ text-align: center;
     align-items: stretch;
     gap: 8px;
   }
+  
+}
+/* Animated form section */
+.form-section {
+  background: linear-gradient(135deg, #fffbe7 0%, #f5f5f5 100%);
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(195,54,11,0.08);
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.form-section .form-label {
+  font-weight: bold;
+  color: #C3360B;
+}
+
+.form-section input[type="text"],
+.form-section input[type="number"],
+.form-section input[type="date"] {
+  transition: box-shadow 0.3s, border-color 0.3s;
+}
+
+.form-section input:focus {
+  border-color: #C3360B;
+  box-shadow: 0 0 8px #C3360B33;
+}
+
+.form-section .btn-primary {
+  background: #C3360B;
+  border: none;
+  font-size: 1.2em;
+  padding: 12px 36px;
+  border-radius: 8px;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.form-section .btn-primary:hover {
+  background: #a32a08;
+  transform: scale(1.05);
+}
+
+/* Confetti animation for success message */
+@keyframes confetti-fall {
+  0% { background-position: 0 0, 100px 0, 200px 0, 300px 0, 400px 0; }
+  100% { background-position: 0 400px, 100px 400px, 200px 400px, 300px 400px, 400px 400px; }
+}
+#form-success-message {
+  background-image:
+    radial-gradient(circle, #FFD700 8px, transparent 8px),
+    radial-gradient(circle, #FF69B4 8px, transparent 8px),
+    radial-gradient(circle, #00CFFF 8px, transparent 8px),
+    radial-gradient(circle, #32CD32 8px, transparent 8px),
+    radial-gradient(circle, #FF6347 8px, transparent 8px);
+  background-size: 100px 100px;
+  animation: confetti-fall 2s linear;
 }

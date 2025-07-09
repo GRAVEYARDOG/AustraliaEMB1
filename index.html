@@ -17,6 +17,40 @@
     <script src="js/respond.min.js"></script>
     <![endif]-->       
     <link rel="shortcut icon" href="images/ico/favicon.ico"> 
+
+  <style>
+    /* Keyframes for pulse animation */
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+        text-shadow: 0 0 5px rgb(183, 113, 0), 0 0 10px rgb(183, 113, 0);
+      }
+      50% {
+        transform: scale(1.05);
+        text-shadow: 0 0 10px rgb(255, 255, 255), 0 0 20px rgb(255, 255, 255);
+      }
+      100% {
+        transform: scale(1);
+        text-shadow: 0 0 5px rgb(183, 113, 0), 0 0 10px rgb(183, 113, 0);
+      }
+    }
+
+    /* Glow and pulse effect */
+    .pulse-glow {
+      animation: pulse 2s infinite ease-in-out;
+      color: #fff; /* Make the glow more visible on dark background */
+    }
+
+    /* Optional: Base styles for text */
+    .section-title {
+      font-size: 2em;
+    }
+
+    .section-header p {
+      font-size: 1.25em;
+    }
+  </style>
+
 </head> 
 
 <body id="home">
@@ -126,7 +160,7 @@
                 </div>
                 <div class="media service-box wow fadeInRight">
                     <div class="pull-left">
-                        <i class="fa fa-cloud-upload animated infinite pulse"></i>
+                        <i class="fa fa-cloud-upload animated infinite bounce"></i>
                     </div>
                     <div class="media-body">
                         <h4 class="media-heading">Communication and Responsiveness-መገናኘትና ፈጣን እሴት ማሳየት</h4>
@@ -216,7 +250,7 @@
                 <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="300ms">
                     <div class="media service-box">
                         <div class="pull-left">
-                            <i class="fa fa-bar-chart animated infinite pulse"></i>
+                            <i class="fa fa-bar-chart animated infinite bounce"></i>
                         </div>
                         <div class="media-body">
                             <h4 class="media-heading">Education and Scholarship Advisory | የትምህርት እና የስኮላርሺፕ መመኪያ</h4>
@@ -255,7 +289,7 @@
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title text-center wow fadeInDown">Clients Status In Photo-የደንበኞች ሁኔታና በምስል</h2>
-                <p class="text-center wow fadeInDown">ከታች የተዘረዘሩትን አራት ማእዘኖች በመምረጥ መረጃዎትን ይወቁ<br/>By selecting the four options listed below, access your information.
+                <p class="text-center wow fadeInDown pulse-glow" style="font-size: 1.50em;">ከታች የተዘረዘሩትን አራት ማእዘኖች በመምረጥ መረጃዎትን ይወቁ<br/>By selecting the four options listed below, access your information.
 </p>
             </div>
 
@@ -287,7 +321,7 @@
                             Nationality: ETHIOPIAN<br>
                   Passport No.: EQ2775949<br>
                   ID No.: 344mj93100<br>
-                  Work Status: In Process
+                  Work Status: NULL
                             <a class="preview" href="images/portfolio/gallery1.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
                         </div>
                     </div>
@@ -301,7 +335,7 @@
                              Nationality: ETHIOPIAN<br>
                   Passport No.: EQ2547032<br>
                   ID No.: 948466h21j7<br>
-                  Work Status: In Process
+                  Work Status: NULL
                             <a class="preview" href="images/portfolio/gallery2.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
                         </div>
                     </div>
@@ -315,7 +349,7 @@
                              Nationality: ETHIOPIAN<br>
                   Passport No.: EQ2775950<br>
                   ID No.: 6629a8u600i<br>
-                  Work Status: In Process
+                  Work Status: NULL
                             <a class="preview" href="images/portfolio/gallery3.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
                         </div>
                     </div>
@@ -357,7 +391,7 @@
                              Nationality: ETHIOPIAN<br>
                   Passport No.: EP8027105<br>
                   ID No.: 27953ffd36<br>
-                  Work Status: Null
+                  Work Status: In Proccess
                             <a class="preview" href="images/portfolio/gallery6.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
                         </div>
                     </div>
@@ -385,7 +419,7 @@
                              Nationality: ETHIOPIAN<br>
                   Passport No.: EP9163860<br>
                   ID No.: 63434udd56<br>
-                  Work Status: Null
+                  Work Status: In Proccess
                             <a class="preview" href="images/portfolio/gallery8.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
                         </div>
                     </div>
@@ -411,110 +445,15 @@
                     </div>
                     <div class="team-info">
                         <h3>DAWIT TEMESGEN TSEGAYE</h3>
+                        __________________________<br/>
                         <span>Nationality: ETHIOPIAN<br>
+                            __________________________<br/>
                   Passport No.: EQ2775949<br>
+                  __________________________<br/>
                   ID No.: 344mj93100<br>
+                  __________________________<br/>
                   Work Status: NULL</span>
-                    </div>
-                    <ul class="social-icons">
-                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6 col-xs-12">
-                <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="100ms">
-                    <div class="team-img">
-                        <img class="img-responsive" src="images/team/gallery2.jpg" alt="">
-                    </div>
-                    <div class="team-info">
-                        <h3>KALAB GEBREMEDHN KIDANE</h3>
-                        <span>Nationality: ETHIOPIAN<br>
-                  Passport No.: EQ2547032<br>
-                  ID No.: 948466h21j7<br>
-                  Work Status: NULL</span>
-                    </div>
-                    <ul class="social-icons">
-                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6 col-xs-12">
-                <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="200ms">
-                    <div class="team-img">
-                        <img class="img-responsive" src="images/team/gallery3.jpg" alt="">
-                    </div>
-                    <div class="team-info">
-                        <h3>TEMESGEN TSEGAYE GEBREAB</h3>
-                        <span>Nationality: ETHIOPIAN<br>
-                  Passport No.: EQ2775950<br>
-                  ID No.: 6629a8u600i<br>
-                  Work Status: NULL</span>
-                    </div>
-                    <ul class="social-icons">
-                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6 col-xs-12">
-                <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="300ms">
-                    <div class="team-img">
-                        <img class="img-responsive" src="images/team/gallery4.jpg" alt="">
-                    </div>
-                    <div class="team-info">
-                        <h3>TOMAS TEGNAW MESHESHA</h3>
-                        <span>Nationality: ETHIOPIAN<br>
-                  Passport No.: EP8800066<br>
-                  ID No.: 94f0662777<br>
-                  Work Status: In Process</span>
-                    </div>
-                    <ul class="social-icons">
-                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6 col-xs-12">
-                <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="400ms">
-                    <div class="team-img">
-                        <img class="img-responsive" src="images/team/gallery5.jpg" alt="">
-                    </div>
-                    <div class="team-info">
-                        <h3>SHSHAY TAMENE GEBREMARIAM</h3>
-                        <span>Nationality: ETHIOPIAN<br>
-                  Passport No.: EQ2427334<br>
-                  ID No.: 7394452jh00<br>
-                  Work Status: In Process</span>
-                    </div>
-                    <ul class="social-icons">
-                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6 col-xs-12">
-                <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="500ms">
-                    <div class="team-img">
-                        <img class="img-responsive" src="images/team/gallery6.jpg" alt="">
-                    </div>
-                    <div class="team-info">
-                        <h3>GETACHEW NIGUS BERHIE</h3>
-                        <span>Nationality: ETHIOPIAN<br>
-                  Passport No.: EP8027105<br>
-                  ID No.: 27953ffd36<br>
-                  Work Status: In Proccess</span>
+                  __________________________<br/>
                     </div>
                     <ul class="social-icons">
                         <li><a href="#"><i class="fa fa-facebook"></i></a></li>
@@ -531,10 +470,140 @@
                     </div>
                     <div class="team-info">
                         <h3>BAYU NESIBU MINWALKULET</h3>
+                        __________________________<br/>
                         <span>Nationality: ETHIOPIAN<br>
+                            __________________________<br/>
           Passport No.: EP7425424<br>
+          __________________________<br/>
           ID No.: 185647jd54<br>
+          __________________________<br/>
           Work Status: In Proccess</span>
+          __________________________<br/>
+                    </div>
+                    <ul class="social-icons">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="200ms">
+                    <div class="team-img">
+                        <img class="img-responsive" src="images/team/gallery3.jpg" alt="">
+                    </div>
+                    <div class="team-info">
+                        <h3>TEMESGEN TSEGAYE GEBREAB</h3>
+                        __________________________<br/>
+                        <span>Nationality: ETHIOPIAN<br>
+                            __________________________<br/>
+                  Passport No.: EQ2775950<br>
+                  __________________________<br/>
+                  ID No.: 6629a8u600i<br>
+                  __________________________<br/>
+                  Work Status: NULL</span>
+                  __________________________<br/>
+                    </div>
+                    <ul class="social-icons">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="300ms">
+                    <div class="team-img">
+                        <img class="img-responsive" src="images/team/gallery4.jpg" alt="">
+                    </div>
+                    <div class="team-info">
+                        <h3>TOMAS TEGNAW MESHESHA</h3>
+                        __________________________<br/>
+                        <span>Nationality: ETHIOPIAN<br>
+                            __________________________<br/>
+                  Passport No.: EP8800066<br>
+                  __________________________<br/>
+                  ID No.: 94f0662777<br>
+                  __________________________<br/>
+                  Work Status: In Process</span>
+                  __________________________<br/>
+                    </div>
+                    <ul class="social-icons">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="400ms">
+                    <div class="team-img">
+                        <img class="img-responsive" src="images/team/gallery5.jpg" alt="">
+                    </div>
+                    <div class="team-info">
+                        <h3>SHSHAY TAMENE GEBREMARIAM</h3>
+                        __________________________<br/>
+                        <span>Nationality: ETHIOPIAN<br>
+                            __________________________<br/>
+                  Passport No.: EQ2427334<br>
+                  __________________________<br/>
+                  ID No.: 7394452jh00<br>
+                  __________________________<br/>
+                  Work Status: In Process</span>
+                  __________________________<br/>
+                    </div>
+                    <ul class="social-icons">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="500ms">
+                    <div class="team-img">
+                        <img class="img-responsive" src="images/team/gallery6.jpg" alt="">
+                    </div>
+                    <div class="team-info">
+                        <h3>GETACHEW NIGUS BERHIE</h3>
+                        __________________________<br/>
+                        <span>Nationality: ETHIOPIAN<br>
+                            __________________________<br/>
+                  Passport No.: EP8027105<br>
+                  __________________________<br/>
+                  ID No.: 27953ffd36<br>
+                  __________________________<br/>
+                  Work Status: In Proccess</span>
+                  __________________________<br/>
+                    </div>
+                    <ul class="social-icons">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="100ms">
+                    <div class="team-img">
+                        <img class="img-responsive" src="images/team/gallery2.jpg" alt="">
+                    </div>
+                    <div class="team-info">
+                        <h3>KALAB GEBREMEDHN KIDANE</h3>
+                        __________________________<br/>
+                        <span>Nationality: ETHIOPIAN<br>
+                    __________________________<br>
+                  Passport No.: EQ2547032<br>
+                    __________________________<br>
+                  ID No.: 948466h21j7<br>
+                    __________________________<br>
+                  Work Status: NULL</span>
+                  __________________________<br/>
                     </div>
                     <ul class="social-icons">
                         <li><a href="#"><i class="fa fa-facebook"></i></a></li>
@@ -551,10 +620,15 @@
                     </div>
                     <div class="team-info">
                         <h3>GUESH GEBREKIRSTOS KIDANU</h3>
+                        __________________________<br/>
                         <span>Nationality: ETHIOPIAN<br>
+                            __________________________<br/>
                   Passport No.: EP9163860<br>
+                  __________________________<br/>
                   ID No.: 63434udd56<br>
+                  __________________________<br/>
                   Work Status: In Proccess</span>
+                  __________________________<br/>
                     </div>
                     <ul class="social-icons">
                         <li><a href="#"><i class="fa fa-facebook"></i></a></li>
@@ -642,6 +716,138 @@
         </div><!--/.row-->
     </div><!--/.container-->
 </section><!--/#pricing-->
+
+<!-- Collapsible Animated Registration Form -->
+<div class="text-center" style="margin: 40px 0 20px 0;">
+  <button class="btn btn-primary btn-lg" type="button" data-toggle="collapse" data-target="#animatedFormSection" aria-expanded="false" aria-controls="animatedFormSection">
+    <i class="fa fa-chevron-down"></i> Open Registration Form-የመመዝገቢያ ፎርም ለመክፈት
+  </button>
+</div>
+
+<div id="animatedFormSection" class="collapse">
+  <section class="form-section animated fadeInUp" style="margin-bottom:40px;">
+    <div class="container">
+        <!-- Success message (hidden by default) -->
+<div id="form-success-message" class="alert alert-success animated bounceIn" style="display:none; background: linear-gradient(135deg, #fffbe7 0%, #ffe6e6 100%); border: 2px solid #C3360B; color: #C3360B; font-size: 1.3em; text-align: center; border-radius: 12px; margin-bottom: 20px; box-shadow: 0 8px 32px rgba(195,54,11,0.12);">
+  <i class="fa fa-check-circle" style="font-size:2em; color:#28a745; vertical-align:middle;"></i>
+  <span style="margin-left: 10px; font-weight: bold;">Successfully sent the form! 🎉</span>
+</div>
+      <div class="section-header">
+        <h2 class="section-title text-center wow fadeInDown">
+          <i class="fa fa-user-circle" style="color:#C3360B;"></i> የተመዝጋቢው መረጃ (Registrant Information)
+        </h2>
+      </div>
+      <form class="row g-3 shadow-lg p-4 bg-white rounded" style="max-width:800px;margin:auto;">
+        <!-- Registrant Info -->
+        <div class="col-12 mb-3">
+          <label class="form-label">ሙሉ ስም</label>
+          <input type="text" class="form-control" required>
+        </div>
+        <div class="col-12 mb-3">
+          <label class="form-label">አድራሻ (ክልል)</label>
+          <input type="text" class="form-control" required>
+        </div>
+        <div class="col-12 mb-3">
+          <label class="form-label">ወረዳ</label>
+          <input type="text" class="form-control" required>
+        </div>
+        <div class="col-12 mb-3">
+          <label class="form-label">ቀበሌ</label>
+          <input type="text" class="form-control" required>
+        </div>
+        <div class="col-12 mb-3">
+          <label class="form-label">ዜግነት</label>
+          <input type="text" class="form-control" required>
+        </div>
+        <div class="col-12 mb-3">
+          <label class="form-label">ጾታ</label>
+          <input type="text" class="form-control" required>
+        </div>
+        <div class="col-12 mb-3">
+          <label class="form-label">እድሜ</label>
+          <input type="number" class="form-control" required>
+        </div>
+        <div class="col-12 mb-3">
+          <label class="form-label">የትውልድ ቦታ</label>
+          <input type="text" class="form-control" required>
+        </div>
+        <div class="col-12 mb-3">
+          <label class="form-label">የትውልድ ዘመን</label>
+          <input type="date" class="form-control" required>
+        </div>
+        <div class="col-12 mb-3">
+          <label class="form-label">የመተዳደሪያ ስራ</label>
+          <input type="text" class="form-control" required>
+        </div>
+        <div class="col-12 mb-3">
+          <label class="form-label">የመታወቂያ ቁጥር</label>
+          <input type="text" class="form-control" required>
+        </div>
+        <div class="col-12 mb-3">
+          <label class="form-label">ፎርም የተሞላበት ቀን</label>
+          <input type="date" class="form-control" required>
+        </div>
+        <div class="col-12 mb-3">
+          <label class="form-label">ክብደት</label>
+          <input type="text" class="form-control">
+        </div>
+        <div class="col-12 mb-3">
+          <label class="form-label">ቁመት</label>
+          <input type="text" class="form-control">
+        </div>
+        <div class="col-12 mb-3">
+          <label class="form-label">ስልክ ቁጥር</label>
+          <input type="text" class="form-control" required>
+        </div>
+
+        <!-- Divider -->
+        <div class="col-12">
+          <hr>
+          <h3 class="text-center mb-3" style="color:#C3360B;">
+            <i class="fa fa-users"></i> የቅርብ ተጠሪ መረጃ (Emergency Contact)
+          </h3>
+        </div>
+
+        <!-- Emergency Contact Info -->
+        <div class="col-12 mb-3">
+          <label class="form-label">ሙሉ ስም</label>
+          <input type="text" class="form-control" required>
+        </div>
+        <div class="col-12 mb-3">
+          <label class="form-label">አድራሻ (ክልል)</label>
+          <input type="text" class="form-control" required>
+        </div>
+        <div class="col-12 mb-3">
+          <label class="form-label">ወረዳ</label>
+          <input type="text" class="form-control" required>
+        </div>
+        <div class="col-12 mb-3">
+          <label class="form-label">ቀበሌ</label>
+          <input type="text" class="form-control" required>
+        </div>
+        <div class="col-12 mb-3">
+          <label class="form-label">የመታወቂያ ቁጥር</label>
+          <input type="text" class="form-control" required>
+        </div>
+        <div class="col-12 mb-3">
+          <label class="form-label">የትውልድ ዘመን</label>
+          <input type="date" class="form-control" required>
+        </div>
+        <div class="col-12 mb-3">
+          <label class="form-label">ስልክ ቁጥር</label>
+          <input type="text" class="form-control" required>
+        </div>
+
+        <div class="col-12 text-center mt-4">
+          <button type="submit" class="btn btn-primary btn-lg animated pulse infinite" style="background:#C3360B;border:none;">
+            <i class="fa fa-paper-plane"></i> ይላኩ (Submit)
+          </button>
+        </div>
+      </form>
+    </div>
+  </section>
+</div>
+
     <section class="testimonial-area" id="testimonial">
 			<div class="container">
 				<div class="section-header">
@@ -830,6 +1036,26 @@ document.addEventListener("DOMContentLoaded", function () {
         counter.textContent = "0";
         observer.observe(counter);
     });
+});
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  var form = document.querySelector('#animatedFormSection form');
+  var successMsg = document.getElementById('form-success-message');
+  if(form) {
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      // Hide the form
+      form.style.display = 'none';
+      // Show the success message
+      successMsg.style.display = 'block';
+      // Add a confetti effect (optional, simple CSS)
+      document.getElementById('animatedFormSection').style.background = 'repeating-linear-gradient(135deg, #fffbe7 0%, #ffe6e6 100%)';
+      // Optionally, scroll to the message
+      successMsg.scrollIntoView({behavior: "smooth"});
+    });
+  }
 });
 </script>
 
